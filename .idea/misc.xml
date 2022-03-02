@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Projects/Android/2022-02/app/src/main/res/drawable/background.xml" value="0.3755" />
+        <entry key="..\:/Projects/Android/2022-02/app/src/main/res/drawable/default_selecter.xml" value="0.3755" />
+        <entry key="..\:/Projects/Android/2022-02/app/src/main/res/drawable/green.xml" value="0.124" />
+        <entry key="..\:/Projects/Android/2022-02/app/src/main/res/drawable/selected_radius.xml" value="0.3755" />
+        <entry key="..\:/Projects/Android/2022-02/app/src/main/res/layout/activity_carousel.xml" value="0.1" />
+        <entry key="..\:/Projects/Android/2022-02/app/src/main/res/layout/activity_main.xml" value="0.33818342151675485" />
+        <entry key="..\:/Projects/Android/2022-02/app/src/main/res/layout/activity_sushe.xml" value="0.33818342151675485" />
+        <entry key="..\:/Projects/Android/2022-02/app/src/main/res/layout/activity_video.xml" value="0.33818342151675485" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
