@@ -29,9 +29,9 @@ import java.util.List;
  */
 public class ImageAdapter extends BannerAdapter<BannerDataBean, ImageAdapter.BannerViewHolder> {
 
-    public ImageAdapter(List<BannerDataBean> mDatas) {
+    public ImageAdapter(List<BannerDataBean> bannerDataBeanList) {
         //设置数据，也可以调用banner提供的方法,或者自己在adapter中实现
-        super(mDatas);
+        super(bannerDataBeanList);
     }
 
     //创建ViewHolder，可以用viewType这个字段来区分不同的ViewHolder
