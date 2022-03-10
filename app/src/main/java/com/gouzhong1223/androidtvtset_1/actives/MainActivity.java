@@ -3,22 +3,44 @@ package com.gouzhong1223.androidtvtset_1.actives;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.hardware.usb.UsbDevice;
+import android.hardware.usb.UsbManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 import com.gouzhong1223.androidtvtset_1.R;
 
+import java.util.HashMap;
+
 public class MainActivity extends Activity {
+
+    /**
+     * 用于缓存USB设备的Map
+     */
+    public HashMap<String, UsbDevice> deviceList = new HashMap<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+        initUsb();
     }
 
+    /**
+     * 初始化USB设备
+     */
+    private void initUsb() {
+        UsbManager manager = (UsbManager) getSystemService(Context.USB_SERVICE);
+        deviceList = manager.getDeviceList();
+    }
+
+    /**
+     * 初始化View
+     */
     private void initView() {
         View.OnFocusChangeListener onFocusChangeListener = (view, b) -> {
             if (b) {
@@ -37,6 +59,11 @@ public class MainActivity extends Activity {
     }
 
 
+    /**
+     * 组件的点击绑定事件
+     *
+     * @param view 组件
+     */
     @SuppressLint("NonConstantResourceId")
     public void onclick(View view) {
         Intent intent = new Intent();
