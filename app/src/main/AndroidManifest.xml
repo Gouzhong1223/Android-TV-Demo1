@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
         package="com.gouzhong1223.androidtvtset_1">
 
+    <uses-feature android:name="android.hardware.usb.host" />
     <uses-feature
             android:name="android.software.leanback"
             android:required="false" />
@@ -15,7 +16,7 @@
                 android:name=".actives.VideoActivity"
                 android:exported="false" />
         <activity
-                android:name=".actives.SusheActivity"
+                android:name=".actives.DormitorySafetyActivity"
                 android:exported="false" />
         <activity
                 android:name=".actives.CarouselActivity"
@@ -26,9 +27,11 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+            <meta-data
+                    android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
                     android:resource="@xml/device_filter" />
         </activity>
     </application>

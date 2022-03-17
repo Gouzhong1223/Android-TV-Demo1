@@ -2,7 +2,6 @@ package com.gouzhong1223.androidtvtset_1.actives;
 
 import android.os.Bundle;
 
-
 import androidx.fragment.app.FragmentActivity;
 
 import com.gouzhong1223.androidtvtset_1.R;
@@ -11,7 +10,7 @@ import com.gouzhong1223.androidtvtset_1.banner.bean.BannerDataBean;
 import com.youth.banner.Banner;
 import com.youth.banner.indicator.CircleIndicator;
 
-public class SusheActivity extends FragmentActivity {
+public class DormitorySafetyActivity extends FragmentActivity {
 
     private Banner banner;
 
